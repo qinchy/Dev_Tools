@@ -1,0 +1,147 @@
+2017-09-15 14:44:01.242 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-09-15 14:44:01.769 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr? version 6.6.0
+2017-09-15 14:44:01.770 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-09-15 14:44:01.770 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\Dev_Tools\solr-6.6.0
+2017-09-15 14:44:01.783 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-09-15T06:44:01.771Z
+2017-09-15 14:44:01.799 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\Dev_Tools\solr-6.6.0\server\solr
+2017-09-15 14:44:01.805 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\Dev_Tools\solr-6.6.0\server\solr\solr.xml
+2017-09-15 14:44:02.320 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-09-15 14:44:04.797 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath D:\Dev_Tools\solr-6.6.0\server\solr
+2017-09-15 14:44:04.800 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [new_core, qincy_core]
+2017-09-15 14:44:04.906 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.c.SolrResourceLoader [new_core] Added 46 libs to classloader, from paths: [/D:/Dev_Tools/solr-6.6.0/contrib/extraction/lib, /D:/Dev_Tools/solr-6.6.0/contrib/langid/lib, /D:/Dev_Tools/solr-6.6.0/contrib/velocity/lib, /D:/Dev_Tools/solr-6.6.0/dist]
+2017-09-15 14:44:04.906 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.c.SolrResourceLoader [qincy_core] Added 53 libs to classloader, from paths: [/D:/Dev_Tools/solr-6.6.0/contrib/clustering/lib, /D:/Dev_Tools/solr-6.6.0/contrib/extraction/lib, /D:/Dev_Tools/solr-6.6.0/contrib/langid/lib, /D:/Dev_Tools/solr-6.6.0/contrib/velocity/lib, /D:/Dev_Tools/solr-6.6.0/dist]
+2017-09-15 14:44:05.103 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-09-15 14:44:05.123 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.0
+2017-09-15 14:44:05.152 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.0
+2017-09-15 14:44:05.414 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.s.IndexSchema [new_core] Schema name=example-DIH-solr
+2017-09-15 14:44:05.505 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.s.IndexSchema [qincy_core] Schema name=example-data-driven-schema
+2017-09-15 14:44:05.666 INFO  (main) [   ] o.e.j.s.Server Started @5277ms
+2017-09-15 14:44:05.671 WARN  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2017-09-15 14:44:06.165 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.s.IndexSchema Loaded schema example-DIH-solr/1.6 with uniqueid field id
+2017-09-15 14:44:06.172 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-09-15 14:44:06.253 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.c.CoreContainer Creating SolrCore 'new_core' using configuration from instancedir D:\Dev_Tools\solr-6.6.0\server\solr\new_core, trusted=true
+2017-09-15 14:44:06.258 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.c.CoreContainer Creating SolrCore 'qincy_core' using configuration from instancedir D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core, trusted=true
+2017-09-15 14:44:06.293 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-15 14:44:06.293 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-15 14:44:06.299 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.c.SolrCore [[qincy_core] ] Opening new SolrCore at [D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core], dataDir=[D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\]
+2017-09-15 14:44:06.299 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.c.SolrCore [[new_core] ] Opening new SolrCore at [D:\Dev_Tools\solr-6.6.0\server\solr\new_core], dataDir=[D:\Dev_Tools\solr-6.6.0\server\solr\new_core\data\]
+2017-09-15 14:44:06.352 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-09-15 14:44:06.352 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-09-15 14:44:06.715 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-09-15 14:44:06.715 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-09-15 14:44:06.716 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-09-15 14:44:06.716 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-09-15 14:44:06.727 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-09-15 14:44:06.734 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-15 14:44:06.734 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-09-15 14:44:06.738 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-15 14:44:06.795 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@2bdda538[qincy_core] main]
+2017-09-15 14:44:06.795 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@216490bb[new_core] main]
+2017-09-15 14:44:06.811 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\conf
+2017-09-15 14:44:06.811 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Dev_Tools\solr-6.6.0\server\solr\new_core\conf
+2017-09-15 14:44:06.829 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-09-15 14:44:06.829 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-09-15 14:44:06.838 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-09-15 14:44:06.838 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-09-15 14:44:06.843 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\conf\elevate.xml
+2017-09-15 14:44:06.852 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2017-09-15 14:44:06.856 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-09-15 14:44:06.862 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-15 14:44:06.892 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-09-15 14:44:06.894 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@3b9c3b19, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2017-09-15 14:44:06.903 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Dev_Tools\solr-6.6.0\server\solr\new_core\conf\elevate.xml
+2017-09-15 14:44:06.912 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-15 14:44:06.943 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1578586967315054592
+2017-09-15 14:44:06.943 INFO  (searcherExecutor-7-thread-1-processing-x:qincy_core) [   x:qincy_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2bdda538[qincy_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-15 14:44:06.948 INFO  (searcherExecutor-7-thread-1-processing-x:qincy_core) [   x:qincy_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-09-15 14:44:06.948 INFO  (searcherExecutor-7-thread-1-processing-x:qincy_core) [   x:qincy_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-09-15 14:44:06.951 INFO  (searcherExecutor-8-thread-1-processing-x:new_core) [   x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@216490bb[new_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-15 14:44:06.955 INFO  (searcherExecutor-7-thread-1-processing-x:qincy_core) [   x:qincy_core] o.a.s.c.SolrCore [qincy_core] Registered new searcher Searcher@2bdda538[qincy_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-15 14:44:07.002 INFO  (searcherExecutor-8-thread-1-processing-x:new_core) [   x:new_core] o.a.s.c.S.Request [new_core]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=46
+2017-09-15 14:44:07.003 INFO  (searcherExecutor-8-thread-1-processing-x:new_core) [   x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-09-15 14:44:07.003 INFO  (searcherExecutor-8-thread-1-processing-x:new_core) [   x:new_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-09-15 14:44:07.004 INFO  (searcherExecutor-8-thread-1-processing-x:new_core) [   x:new_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2017-09-15 14:44:07.004 INFO  (searcherExecutor-8-thread-1-processing-x:new_core) [   x:new_core] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2017-09-15 14:44:07.005 INFO  (searcherExecutor-8-thread-1-processing-x:new_core) [   x:new_core] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2017-09-15 14:44:07.047 INFO  (searcherExecutor-8-thread-1-processing-x:new_core) [   x:new_core] o.a.s.c.SolrCore [new_core] Registered new searcher Searcher@216490bb[new_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-15 14:44:26.462 INFO  (qtp1654589030-17) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-09-15 14:44:26.891 INFO  (qtp1654589030-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505457866729} status=0 QTime=2
+2017-09-15 14:44:26.905 INFO  (qtp1654589030-14) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1505457866853} status=0 QTime=4
+2017-09-15 14:44:26.917 INFO  (qtp1654589030-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1505457866853} status=0 QTime=14
+2017-09-15 14:44:26.933 INFO  (qtp1654589030-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505457866730} status=0 QTime=43
+2017-09-15 14:44:26.948 INFO  (qtp1654589030-20) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1505457866853} status=0 QTime=0
+2017-09-15 14:44:28.634 INFO  (qtp1654589030-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505457866729} status=0 QTime=0
+2017-09-15 14:44:28.643 INFO  (qtp1654589030-21) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1505457866853} status=0 QTime=0
+2017-09-15 14:44:28.678 INFO  (qtp1654589030-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505457866730} status=0 QTime=36
+2017-09-15 14:44:28.690 INFO  (qtp1654589030-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505457866729} status=0 QTime=0
+2017-09-15 14:44:28.701 INFO  (qtp1654589030-14) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1505457866853} status=0 QTime=0
+2017-09-15 14:44:28.709 INFO  (qtp1654589030-15) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1505457866853} status=0 QTime=1
+2017-09-15 14:44:28.715 INFO  (qtp1654589030-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505457866730} status=0 QTime=21
+2017-09-15 14:44:28.732 INFO  (qtp1654589030-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1505457866853} status=0 QTime=0
+2017-09-15 14:44:29.376 INFO  (qtp1654589030-13) [   x:qincy_core] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2017-09-15 14:44:29.405 INFO  (qtp1654589030-13) [   x:qincy_core] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-09-15 14:44:29.415 INFO  (qtp1654589030-13) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/dataimport params={core=qincy_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1505457866853&verbose=false} status=0 QTime=43
+2017-09-15 14:44:29.417 INFO  (Thread-14) [   x:qincy_core] o.a.s.h.d.DataImporter Starting Full Import
+2017-09-15 14:44:29.423 INFO  (qtp1654589030-21) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1505457866853} status=0 QTime=0
+2017-09-15 14:44:29.436 WARN  (Thread-14) [   x:qincy_core] o.a.s.h.d.SimplePropertiesWriter Unable to read: dataimport.properties
+2017-09-15 14:44:29.496 INFO  (Thread-14) [   x:qincy_core] o.a.s.u.p.LogUpdateProcessorFactory [qincy_core]  webapp=/solr path=/dataimport params={core=qincy_core&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1505457866853&verbose=false} status=0 QTime=43{deleteByQuery=*:* (-1578586990940520448)} 0 124
+2017-09-15 14:44:29.498 ERROR (Thread-14) [   x:qincy_core] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Could not load driver: com.mysql.jdbc.Driver Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:270)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:415)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:474)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:457)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Could not load driver: com.mysql.jdbc.Driver Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:416)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Could not load driver: com.mysql.jdbc.Driver Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createConnectionFactory(JdbcDataSource.java:159)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.init(JdbcDataSource.java:80)
+	at org.apache.solr.handler.dataimport.DataImporter.getDataSourceInstance(DataImporter.java:388)
+	at org.apache.solr.handler.dataimport.ContextImpl.getDataSource(ContextImpl.java:100)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.init(SqlEntityProcessor.java:53)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.init(EntityProcessorWrapper.java:77)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:433)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	... 6 more
+Caused by: java.lang.ClassNotFoundException: Unable to load com.mysql.jdbc.Driver or org.apache.solr.handler.dataimport.com.mysql.jdbc.Driver
+	at org.apache.solr.handler.dataimport.DocBuilder.loadClass(DocBuilder.java:935)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createConnectionFactory(JdbcDataSource.java:157)
+	... 13 more
+Caused by: org.apache.solr.common.SolrException: Error loading class 'com.mysql.jdbc.Driver'
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:556)
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:487)
+	at org.apache.solr.handler.dataimport.DocBuilder.loadClass(DocBuilder.java:926)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:814)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:540)
+	... 16 more
+
+2017-09-15 14:44:29.502 INFO  (Thread-14) [   x:qincy_core] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2017-09-15 14:44:29.507 INFO  (Thread-14) [   x:qincy_core] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2017-09-15 14:44:29.507 INFO  (Thread-14) [   x:qincy_core] o.a.s.u.DirectUpdateHandler2 end_rollback
+2017-09-15 14:46:35.676 INFO  (qtp1654589030-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505457866729} status=0 QTime=0
+2017-09-15 14:46:35.714 INFO  (qtp1654589030-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1505457995668} status=0 QTime=22
+2017-09-15 14:46:35.716 INFO  (qtp1654589030-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505457866730} status=0 QTime=35
+2017-09-15 14:46:42.044 INFO  (qtp1654589030-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505457866729} status=0 QTime=0
+2017-09-15 14:46:42.049 INFO  (qtp1654589030-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1505458002035} status=0 QTime=0
+2017-09-15 14:46:42.067 INFO  (qtp1654589030-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505457866730} status=0 QTime=22
+2017-09-15 14:47:05.080 INFO  (Thread-0) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=388357135
+2017-09-15 14:47:05.082 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2017-09-15 14:47:05.083 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2017-09-15 14:47:05.085 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty
+2017-09-15 14:47:05.093 INFO  (coreCloseExecutor-17-thread-2) [   x:qincy_core] o.a.s.c.SolrCore [qincy_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@392219c6
+2017-09-15 14:47:05.095 INFO  (coreCloseExecutor-17-thread-1) [   x:new_core] o.a.s.c.SolrCore [new_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@3b9c3b19
+2017-09-15 14:47:05.098 INFO  (coreCloseExecutor-17-thread-2) [   x:qincy_core] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter close.
+2017-09-15 14:47:05.101 INFO  (coreCloseExecutor-17-thread-2) [   x:qincy_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@2810cfe1
+2017-09-15 14:47:05.110 INFO  (coreCloseExecutor-17-thread-1) [   x:new_core] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.new_core
+2017-09-15 14:47:05.147 INFO  (coreCloseExecutor-17-thread-2) [   x:qincy_core] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.qincy_core

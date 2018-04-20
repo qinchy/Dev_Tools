@@ -1,0 +1,787 @@
+2017-09-15 14:57:53.605 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-09-15 14:57:54.116 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr? version 6.6.0
+2017-09-15 14:57:54.117 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-09-15 14:57:54.118 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\Dev_Tools\solr-6.6.0
+2017-09-15 14:57:54.132 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-09-15T06:57:54.119Z
+2017-09-15 14:57:54.147 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\Dev_Tools\solr-6.6.0\server\solr
+2017-09-15 14:57:54.153 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\Dev_Tools\solr-6.6.0\server\solr\solr.xml
+2017-09-15 14:57:54.636 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-09-15 14:57:57.086 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath D:\Dev_Tools\solr-6.6.0\server\solr
+2017-09-15 14:57:57.088 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [new_core, qincy_core]
+2017-09-15 14:57:57.183 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.c.SolrResourceLoader [new_core] Added 46 libs to classloader, from paths: [/D:/Dev_Tools/solr-6.6.0/contrib/extraction/lib, /D:/Dev_Tools/solr-6.6.0/contrib/langid/lib, /D:/Dev_Tools/solr-6.6.0/contrib/velocity/lib, /D:/Dev_Tools/solr-6.6.0/dist]
+2017-09-15 14:57:57.203 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.c.SolrResourceLoader [qincy_core] Added 53 libs to classloader, from paths: [/D:/Dev_Tools/solr-6.6.0/contrib/clustering/lib, /D:/Dev_Tools/solr-6.6.0/contrib/extraction/lib, /D:/Dev_Tools/solr-6.6.0/contrib/langid/lib, /D:/Dev_Tools/solr-6.6.0/contrib/velocity/lib, /D:/Dev_Tools/solr-6.6.0/dist]
+2017-09-15 14:57:57.387 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2017-09-15 14:57:57.400 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.0
+2017-09-15 14:57:57.448 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.0
+2017-09-15 14:57:57.695 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.s.IndexSchema [new_core] Schema name=example-DIH-solr
+2017-09-15 14:57:57.735 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.s.IndexSchema [qincy_core] Schema name=example-data-driven-schema
+2017-09-15 14:57:57.917 WARN  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2017-09-15 14:57:57.966 INFO  (main) [   ] o.e.j.s.Server Started @5116ms
+2017-09-15 14:57:58.389 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.s.IndexSchema Loaded schema example-DIH-solr/1.6 with uniqueid field id
+2017-09-15 14:57:58.405 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-09-15 14:57:58.456 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.c.CoreContainer Creating SolrCore 'new_core' using configuration from instancedir D:\Dev_Tools\solr-6.6.0\server\solr\new_core, trusted=true
+2017-09-15 14:57:58.506 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-15 14:57:58.520 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.c.SolrCore [[new_core] ] Opening new SolrCore at [D:\Dev_Tools\solr-6.6.0\server\solr\new_core], dataDir=[D:\Dev_Tools\solr-6.6.0\server\solr\new_core\data\]
+2017-09-15 14:57:58.524 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.c.CoreContainer Creating SolrCore 'qincy_core' using configuration from instancedir D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core, trusted=true
+2017-09-15 14:57:58.534 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-09-15 14:57:58.540 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.c.SolrCore [[qincy_core] ] Opening new SolrCore at [D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core], dataDir=[D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\]
+2017-09-15 14:57:58.588 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-09-15 14:57:58.588 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-09-15 14:57:58.931 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-09-15 14:57:58.931 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-09-15 14:57:58.932 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-09-15 14:57:58.932 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-09-15 14:57:58.956 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-09-15 14:57:58.957 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-15 14:57:58.957 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-09-15 14:57:58.959 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-09-15 14:57:59.024 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@7f957490[new_core] main]
+2017-09-15 14:57:59.045 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Dev_Tools\solr-6.6.0\server\solr\new_core\conf
+2017-09-15 14:57:59.059 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@1426ea20[qincy_core] main]
+2017-09-15 14:57:59.061 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\conf
+2017-09-15 14:57:59.068 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-09-15 14:57:59.068 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-09-15 14:57:59.076 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-09-15 14:57:59.076 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-09-15 14:57:59.084 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\conf\elevate.xml
+2017-09-15 14:57:59.089 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2017-09-15 14:57:59.092 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-09-15 14:57:59.101 INFO  (coreLoadExecutor-6-thread-2) [   x:qincy_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-15 14:57:59.117 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2017-09-15 14:57:59.118 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@251cbff8, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2017-09-15 14:57:59.123 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Dev_Tools\solr-6.6.0\server\solr\new_core\conf\elevate.xml
+2017-09-15 14:57:59.128 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-09-15 14:57:59.165 INFO  (coreLoadExecutor-6-thread-1) [   x:new_core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1578587839964119040
+2017-09-15 14:57:59.166 INFO  (searcherExecutor-8-thread-1-processing-x:qincy_core) [   x:qincy_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1426ea20[qincy_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.6.0):C4)))}
+2017-09-15 14:57:59.175 INFO  (searcherExecutor-8-thread-1-processing-x:qincy_core) [   x:qincy_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-09-15 14:57:59.175 INFO  (searcherExecutor-8-thread-1-processing-x:qincy_core) [   x:qincy_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-09-15 14:57:59.174 INFO  (searcherExecutor-7-thread-1-processing-x:new_core) [   x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7f957490[new_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-15 14:57:59.178 INFO  (searcherExecutor-8-thread-1-processing-x:qincy_core) [   x:qincy_core] o.a.s.c.SolrCore [qincy_core] Registered new searcher Searcher@1426ea20[qincy_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.6.0):C4)))}
+2017-09-15 14:57:59.236 INFO  (searcherExecutor-7-thread-1-processing-x:new_core) [   x:new_core] o.a.s.c.S.Request [new_core]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=54
+2017-09-15 14:57:59.237 INFO  (searcherExecutor-7-thread-1-processing-x:new_core) [   x:new_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-09-15 14:57:59.238 INFO  (searcherExecutor-7-thread-1-processing-x:new_core) [   x:new_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-09-15 14:57:59.238 INFO  (searcherExecutor-7-thread-1-processing-x:new_core) [   x:new_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2017-09-15 14:57:59.238 INFO  (searcherExecutor-7-thread-1-processing-x:new_core) [   x:new_core] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2017-09-15 14:57:59.239 INFO  (searcherExecutor-7-thread-1-processing-x:new_core) [   x:new_core] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2017-09-15 14:57:59.253 INFO  (searcherExecutor-7-thread-1-processing-x:new_core) [   x:new_core] o.a.s.c.SolrCore [new_core] Registered new searcher Searcher@7f957490[new_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-09-15 14:58:26.473 INFO  (qtp33524623-19) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1505458156633} hits=4 status=0 QTime=4
+2017-09-15 14:58:29.917 INFO  (qtp33524623-21) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2017-09-15 14:58:30.314 INFO  (qtp33524623-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=1
+2017-09-15 14:58:30.345 INFO  (qtp33524623-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=29
+2017-09-15 14:58:31.805 INFO  (qtp33524623-17) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1505458710249} hits=4 status=0 QTime=1
+2017-09-15 15:48:42.490 INFO  (qtp33524623-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 15:48:42.505 INFO  (qtp33524623-21) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1505461722471} status=0 QTime=6
+2017-09-15 15:48:42.508 INFO  (qtp33524623-13) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1505461722471} status=0 QTime=5
+2017-09-15 15:48:42.542 INFO  (qtp33524623-19) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1505458710114&ts=1505458710114} status=503 QTime=5
+2017-09-15 15:48:42.561 INFO  (qtp33524623-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=65
+2017-09-15 15:48:42.567 INFO  (qtp33524623-21) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/system params={wt=json&_=1505461722471} status=0 QTime=28
+2017-09-15 15:53:59.688 INFO  (qtp33524623-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 15:53:59.732 INFO  (qtp33524623-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=35
+2017-09-15 15:53:59.739 INFO  (qtp33524623-13) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1505461722471} status=0 QTime=36
+2017-09-15 15:54:45.661 INFO  (qtp33524623-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 15:54:45.674 INFO  (qtp33524623-17) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1505462085646} status=0 QTime=1
+2017-09-15 15:54:45.683 INFO  (qtp33524623-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=18
+2017-09-15 15:54:45.727 INFO  (qtp33524623-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 15:54:45.738 INFO  (qtp33524623-14) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1505462085646} status=0 QTime=0
+2017-09-15 15:54:45.742 INFO  (qtp33524623-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=14
+2017-09-15 15:54:45.751 INFO  (qtp33524623-15) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1505462085646} status=0 QTime=12
+2017-09-15 15:54:45.785 INFO  (qtp33524623-13) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1505462085646} status=0 QTime=0
+2017-09-15 15:55:50.153 INFO  (qtp33524623-20) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1505462085646} status=0 QTime=9
+2017-09-15 15:55:53.139 INFO  (qtp33524623-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 15:55:53.149 INFO  (qtp33524623-15) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1505461722471} status=0 QTime=2
+2017-09-15 15:55:53.184 INFO  (qtp33524623-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=39
+2017-09-15 15:56:18.706 INFO  (qtp33524623-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 15:56:18.732 INFO  (qtp33524623-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=23
+2017-09-15 15:56:21.175 INFO  (qtp33524623-13) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1505458710249} hits=4 status=0 QTime=0
+2017-09-15 15:56:31.969 INFO  (qtp33524623-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 15:56:31.971 INFO  (qtp33524623-20) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1505462085646} status=0 QTime=0
+2017-09-15 15:56:32.013 INFO  (qtp33524623-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=37
+2017-09-15 15:56:32.031 INFO  (qtp33524623-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 15:56:32.038 INFO  (qtp33524623-14) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1505462085646} status=0 QTime=2
+2017-09-15 15:56:32.046 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1505462085646} status=0 QTime=0
+2017-09-15 15:56:32.052 INFO  (qtp33524623-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=16
+2017-09-15 15:56:32.068 INFO  (qtp33524623-17) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1505462085646} status=0 QTime=0
+2017-09-15 15:56:35.587 INFO  (qtp33524623-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=1
+2017-09-15 15:56:35.606 INFO  (qtp33524623-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=20
+2017-09-15 15:56:35.607 INFO  (qtp33524623-15) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1505461722471} status=0 QTime=5
+2017-09-15 15:56:54.455 INFO  (qtp33524623-20) [   x:qincy_core] o.a.s.u.p.LogUpdateProcessorFactory [qincy_core]  webapp=/solr path=/update params={commitWithin=1000&boost=1.0&overwrite=true&wt=json&_=1505461722471}{} 0 107
+2017-09-15 15:57:07.416 INFO  (qtp33524623-13) [   x:qincy_core] o.a.s.u.p.LogUpdateProcessorFactory [qincy_core]  webapp=/solr path=/update params={commitWithin=1000&boost=1.0&overwrite=true&wt=json&_=1505461722471}{add=[5 (1578591560509947904)]} 0 65
+2017-09-15 15:57:08.417 INFO  (commitScheduler-15-thread-1) [   x:qincy_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2017-09-15 15:57:08.528 INFO  (commitScheduler-15-thread-1) [   x:qincy_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@3561b124[qincy_core] main]
+2017-09-15 15:57:08.536 INFO  (commitScheduler-15-thread-1) [   x:qincy_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-09-15 15:57:08.537 INFO  (searcherExecutor-8-thread-1-processing-x:qincy_core) [   x:qincy_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3561b124[qincy_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.6.0):C4) Uninverting(_2(6.6.0):C1)))}
+2017-09-15 15:57:08.539 INFO  (searcherExecutor-8-thread-1-processing-x:qincy_core) [   x:qincy_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-09-15 15:57:08.540 INFO  (searcherExecutor-8-thread-1-processing-x:qincy_core) [   x:qincy_core] o.a.s.c.SolrCore [qincy_core] Registered new searcher Searcher@3561b124[qincy_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.6.0):C4) Uninverting(_2(6.6.0):C1)))}
+2017-09-15 15:57:22.417 INFO  (commitScheduler-13-thread-1) [   x:qincy_core] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-09-15 15:57:22.420 INFO  (commitScheduler-13-thread-1) [   x:qincy_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@12c18dab
+2017-09-15 15:57:22.568 INFO  (commitScheduler-13-thread-1) [   x:qincy_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@39694fb6[qincy_core] realtime]
+2017-09-15 15:57:22.570 INFO  (commitScheduler-13-thread-1) [   x:qincy_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-09-15 15:57:29.407 INFO  (qtp33524623-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=1
+2017-09-15 15:57:29.426 INFO  (qtp33524623-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=16
+2017-09-15 15:57:31.322 INFO  (qtp33524623-14) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1505458710249} hits=5 status=0 QTime=1
+2017-09-15 15:57:36.754 INFO  (qtp33524623-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 15:57:36.760 WARN  (qtp33524623-21) [   x:qincy_core] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_5]
+java.nio.file.NoSuchFileException: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\index\segments_5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:615)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:588)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-09-15 15:57:36.778 INFO  (qtp33524623-21) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1505461722471} status=0 QTime=19
+2017-09-15 15:57:36.821 INFO  (qtp33524623-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=67
+2017-09-15 15:57:37.577 INFO  (qtp33524623-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 15:57:37.585 INFO  (qtp33524623-15) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/file params={wt=json&_=1505462257568} status=0 QTime=2
+2017-09-15 15:57:37.593 INFO  (qtp33524623-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=13
+2017-09-15 15:57:37.627 INFO  (qtp33524623-21) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1505462257568} status=0 QTime=5
+2017-09-15 15:58:33.633 INFO  (qtp33524623-19) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} hits=5 status=0 QTime=4
+2017-09-15 15:58:33.636 INFO  (qtp33524623-19) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} status=0 QTime=7
+2017-09-15 15:58:36.090 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} hits=5 status=0 QTime=0
+2017-09-15 15:58:36.092 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} status=0 QTime=2
+2017-09-15 15:58:38.762 INFO  (qtp33524623-20) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} hits=5 status=0 QTime=1
+2017-09-15 15:58:38.773 INFO  (qtp33524623-20) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} status=0 QTime=12
+2017-09-15 15:58:41.687 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} hits=5 status=0 QTime=1
+2017-09-15 15:58:41.690 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} status=0 QTime=3
+2017-09-15 15:58:43.122 INFO  (qtp33524623-17) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} hits=5 status=0 QTime=1
+2017-09-15 15:58:43.124 INFO  (qtp33524623-17) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} status=0 QTime=2
+2017-09-15 15:58:43.849 INFO  (qtp33524623-14) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} hits=5 status=0 QTime=1
+2017-09-15 15:58:43.851 INFO  (qtp33524623-14) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} status=0 QTime=3
+2017-09-15 15:58:44.481 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} hits=5 status=0 QTime=21
+2017-09-15 15:58:44.482 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={wt=json&_=1505458710114&ts=1505458710114} status=0 QTime=22
+2017-09-15 15:58:46.898 INFO  (qtp33524623-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 15:58:46.927 INFO  (qtp33524623-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=17
+2017-09-15 15:58:46.992 INFO  (qtp33524623-17) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1505462085646} status=0 QTime=80
+2017-09-15 15:59:56.454 INFO  (qtp33524623-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 15:59:56.479 INFO  (qtp33524623-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=23
+2017-09-15 16:00:31.397 INFO  (qtp33524623-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 16:00:31.404 INFO  (qtp33524623-21) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1505461722471} status=0 QTime=2
+2017-09-15 16:00:31.422 INFO  (qtp33524623-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=23
+2017-09-15 16:00:35.264 INFO  (qtp33524623-15) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1505461722471} status=0 QTime=2
+2017-09-15 16:01:14.113 INFO  (qtp33524623-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 16:01:14.125 WARN  (qtp33524623-21) [   x:qincy_core] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_5]
+java.nio.file.NoSuchFileException: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\index\segments_5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:615)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:588)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-09-15 16:01:14.132 INFO  (qtp33524623-21) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1505461722471} status=0 QTime=7
+2017-09-15 16:01:14.152 INFO  (qtp33524623-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=35
+2017-09-15 16:01:14.153 INFO  (qtp33524623-20) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/config params={wt=json&_=1505462474087} status=0 QTime=19
+2017-09-15 16:01:14.254 WARN  (qtp33524623-21) [   x:qincy_core] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_5]
+java.nio.file.NoSuchFileException: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\index\segments_5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:615)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:588)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-09-15 16:01:14.262 INFO  (qtp33524623-21) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1505461722471} status=0 QTime=8
+2017-09-15 16:01:18.591 INFO  (qtp33524623-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 16:01:18.607 WARN  (qtp33524623-22) [   x:qincy_core] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_5]
+java.nio.file.NoSuchFileException: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\index\segments_5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:615)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:588)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-09-15 16:01:18.611 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1505461722471} status=0 QTime=4
+2017-09-15 16:01:18.615 INFO  (qtp33524623-15) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/config params={wt=json&_=1505462474087} status=0 QTime=0
+2017-09-15 16:01:18.618 INFO  (qtp33524623-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=21
+2017-09-15 16:01:18.653 WARN  (qtp33524623-15) [   x:qincy_core] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_5]
+java.nio.file.NoSuchFileException: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\index\segments_5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:615)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:588)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-09-15 16:01:18.655 INFO  (qtp33524623-15) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1505461722471} status=0 QTime=2
+2017-09-15 16:01:25.235 INFO  (qtp33524623-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 16:01:25.253 WARN  (qtp33524623-17) [   x:qincy_core] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_5]
+java.nio.file.NoSuchFileException: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\index\segments_5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:615)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:588)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-09-15 16:01:25.255 INFO  (qtp33524623-17) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1505461722471} status=0 QTime=2
+2017-09-15 16:01:25.258 INFO  (qtp33524623-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=17
+2017-09-15 16:01:25.260 INFO  (qtp33524623-18) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/config params={wt=json&_=1505462474087} status=0 QTime=0
+2017-09-15 16:01:25.326 WARN  (qtp33524623-15) [   x:qincy_core] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_5]
+java.nio.file.NoSuchFileException: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\index\segments_5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:615)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:588)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-09-15 16:01:25.330 INFO  (qtp33524623-15) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1505461722471} status=0 QTime=4
+2017-09-15 16:01:54.579 INFO  (qtp33524623-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 16:01:54.588 WARN  (qtp33524623-18) [   x:qincy_core] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_5]
+java.nio.file.NoSuchFileException: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\index\segments_5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:615)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:588)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-09-15 16:01:54.592 INFO  (qtp33524623-18) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1505461722471} status=0 QTime=4
+2017-09-15 16:01:54.598 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/config params={wt=json&_=1505462474087} status=0 QTime=6
+2017-09-15 16:01:54.599 INFO  (qtp33524623-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=15
+2017-09-15 16:01:54.635 WARN  (qtp33524623-14) [   x:qincy_core] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_5]
+java.nio.file.NoSuchFileException: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\index\segments_5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:615)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:588)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-09-15 16:01:54.637 INFO  (qtp33524623-14) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1505461722471} status=0 QTime=2
+2017-09-15 16:02:14.233 INFO  (qtp33524623-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 16:02:14.239 WARN  (qtp33524623-20) [   x:qincy_core] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_5]
+java.nio.file.NoSuchFileException: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\index\segments_5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:615)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:588)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-09-15 16:02:14.241 INFO  (qtp33524623-20) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1505461722471} status=0 QTime=2
+2017-09-15 16:02:14.242 INFO  (qtp33524623-19) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/config params={wt=json&_=1505462474087} status=0 QTime=0
+2017-09-15 16:02:14.252 INFO  (qtp33524623-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=18
+2017-09-15 16:02:14.284 WARN  (qtp33524623-15) [   x:qincy_core] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_5]
+java.nio.file.NoSuchFileException: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\index\segments_5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:615)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:588)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-09-15 16:02:14.289 INFO  (qtp33524623-15) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1505461722471} status=0 QTime=4
+2017-09-15 16:02:22.667 INFO  (qtp33524623-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 16:02:22.678 INFO  (qtp33524623-13) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/segments params={wt=json&_=1505462542660} status=0 QTime=2
+2017-09-15 16:02:22.684 INFO  (qtp33524623-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=15
+2017-09-15 16:14:59.088 INFO  (qtp33524623-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 16:14:59.114 INFO  (qtp33524623-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=23
+2017-09-15 16:15:20.212 INFO  (qtp33524623-18) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=content:cc&indent=on&wt=json&_=1505458710249} hits=0 status=0 QTime=4
+2017-09-15 16:17:06.064 INFO  (qtp33524623-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 16:17:06.095 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1505462085646} status=0 QTime=15
+2017-09-15 16:17:06.147 INFO  (qtp33524623-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=81
+2017-09-15 16:17:06.759 INFO  (qtp33524623-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505458710113} status=0 QTime=0
+2017-09-15 16:17:06.772 INFO  (qtp33524623-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505458710114} status=0 QTime=13
+2017-09-15 16:17:29.684 INFO  (qtp33524623-19) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=content:cc李四&indent=on&wt=json&_=1505458710249} hits=1 status=0 QTime=1
+2017-09-15 16:38:07.991 INFO  (qtp33524623-21) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&sort=content+desc&wt=json&_=1505458710249} hits=5 status=0 QTime=39
+2017-09-15 17:20:05.091 INFO  (qtp33524623-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505467204915} status=0 QTime=0
+2017-09-15 17:20:05.110 WARN  (qtp33524623-19) [   x:qincy_core] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_5]
+java.nio.file.NoSuchFileException: D:\Dev_Tools\solr-6.6.0\server\solr\qincy_core\data\index\segments_5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:615)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:588)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-09-15 17:20:05.112 INFO  (qtp33524623-19) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1505467205077} status=0 QTime=1
+2017-09-15 17:20:05.114 INFO  (qtp33524623-21) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1505467205079} status=0 QTime=4
+2017-09-15 17:20:05.118 INFO  (qtp33524623-20) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1505467204916&ts=1505467204916} status=503 QTime=0
+2017-09-15 17:20:05.180 INFO  (qtp33524623-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505467204916} status=0 QTime=72
+2017-09-15 17:20:05.180 INFO  (qtp33524623-15) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/admin/system params={wt=json&_=1505467205079} status=0 QTime=67
+2017-09-15 17:20:20.002 INFO  (qtp33524623-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1505467204915} status=0 QTime=0
+2017-09-15 17:20:20.041 INFO  (qtp33524623-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1505467204916} status=0 QTime=32
+2017-09-15 17:20:55.792 INFO  (qtp33524623-21) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1505467219927} hits=5 status=0 QTime=1
+2017-09-15 17:21:22.591 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1505467219927} hits=5 status=0 QTime=0
+2017-09-15 17:24:03.317 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=content:bb张三&indent=on&wt=json&_=1505467219927} hits=1 status=0 QTime=2
+2017-09-15 17:26:14.437 INFO  (qtp33524623-15) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&start=0&sort=content+desc&rows=2&wt=json&_=1505458710249} hits=5 status=0 QTime=0
+2017-09-15 17:27:43.900 INFO  (qtp33524623-19) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=content:bb张三&indent=on&start=2&rows=2&wt=json&_=1505467219927} hits=1 status=0 QTime=0
+2017-09-15 17:28:06.316 INFO  (qtp33524623-14) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&start=2&rows=2&wt=json&_=1505467219927} hits=5 status=0 QTime=0
+2017-09-15 17:30:05.506 INFO  (qtp33524623-20) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&start=2&rows=3&wt=json&_=1505467219927} hits=5 status=0 QTime=0
+2017-09-15 17:30:14.067 INFO  (qtp33524623-22) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&start=2&rows=4&wt=json&_=1505467219927} hits=5 status=0 QTime=0
+2017-09-15 17:30:24.753 INFO  (qtp33524623-13) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&start=1&rows=4&wt=json&_=1505467219927} hits=5 status=0 QTime=0
+2017-09-15 17:30:34.960 INFO  (qtp33524623-14) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&start=1&rows=3&wt=json&_=1505467219927} hits=5 status=0 QTime=0
+2017-09-15 17:38:21.220 INFO  (qtp33524623-17) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&fq=id:[1+TO+2]&wt=json&_=1505467219927} hits=2 status=0 QTime=14
+2017-09-15 17:41:42.801 INFO  (qtp33524623-18) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&fl=as&start=0&fq=id:[0+TO+1]&sort=content+desc&rows=2&wt=json&_=1505458710249} hits=1 status=0 QTime=11
+2017-09-15 17:42:03.957 INFO  (qtp33524623-19) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&start=0&fq=id:[0+TO+1]&sort=content+desc&rows=2&wt=json&_=1505458710249} hits=1 status=0 QTime=1
+2017-09-15 17:42:19.800 INFO  (qtp33524623-20) [   x:qincy_core] o.a.s.c.S.Request [qincy_core]  webapp=/solr path=/select params={q=*:*&indent=on&start=0&fq=id:[1+TO+3]&sort=content+desc&rows=2&wt=json&_=1505458710249} hits=3 status=0 QTime=1

@@ -1,0 +1,30 @@
+[2018-03-06T14:40:06,936][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-03-06T14:40:07,734][INFO ][o.e.e.NodeEnvironment    ] [5Pv-nTL] using [1] data paths, mounts [[(D:)]], net usable_space [73.9gb], net total_space [97.6gb], types [NTFS]
+[2018-03-06T14:40:07,735][INFO ][o.e.e.NodeEnvironment    ] [5Pv-nTL] heap size [990.7mb], compressed ordinary object pointers [true]
+[2018-03-06T14:40:07,740][INFO ][o.e.n.Node               ] node name [5Pv-nTL] derived from node ID [5Pv-nTLmSG2pQOO-qSpRaA]; set [node.name] to override
+[2018-03-06T14:40:07,741][INFO ][o.e.n.Node               ] version[6.2.2], pid[11904], build[10b1edd/2018-02-16T19:01:30.685723Z], OS[Windows 7/6.1/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2018-03-06T14:40:07,742][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Delasticsearch, -Des.path.home=D:\Dev_Tools\elasticsearch-6.2.2, -Des.path.conf=D:\Dev_Tools\elasticsearch-6.2.2\config]
+[2018-03-06T14:40:09,701][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [aggs-matrix-stats]
+[2018-03-06T14:40:09,702][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [analysis-common]
+[2018-03-06T14:40:09,703][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [ingest-common]
+[2018-03-06T14:40:09,703][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [lang-expression]
+[2018-03-06T14:40:09,704][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [lang-mustache]
+[2018-03-06T14:40:09,705][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [lang-painless]
+[2018-03-06T14:40:09,705][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [mapper-extras]
+[2018-03-06T14:40:09,705][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [parent-join]
+[2018-03-06T14:40:09,706][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [percolator]
+[2018-03-06T14:40:09,706][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [rank-eval]
+[2018-03-06T14:40:09,706][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [reindex]
+[2018-03-06T14:40:09,707][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [repository-url]
+[2018-03-06T14:40:09,708][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [transport-netty4]
+[2018-03-06T14:40:09,708][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] loaded module [tribe]
+[2018-03-06T14:40:09,709][INFO ][o.e.p.PluginsService     ] [5Pv-nTL] no plugins loaded
+[2018-03-06T14:40:15,226][INFO ][o.e.d.DiscoveryModule    ] [5Pv-nTL] using discovery type [zen]
+[2018-03-06T14:40:16,108][INFO ][o.e.n.Node               ] initialized
+[2018-03-06T14:40:16,109][INFO ][o.e.n.Node               ] [5Pv-nTL] starting ...
+[2018-03-06T14:40:17,729][INFO ][o.e.t.TransportService   ] [5Pv-nTL] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2018-03-06T14:40:21,009][INFO ][o.e.c.s.MasterService    ] [5Pv-nTL] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {5Pv-nTL}{5Pv-nTLmSG2pQOO-qSpRaA}{6gGYgT82Sau-N7psk0Wu1w}{127.0.0.1}{127.0.0.1:9300}
+[2018-03-06T14:40:21,020][INFO ][o.e.c.s.ClusterApplierService] [5Pv-nTL] new_master {5Pv-nTL}{5Pv-nTLmSG2pQOO-qSpRaA}{6gGYgT82Sau-N7psk0Wu1w}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {5Pv-nTL}{5Pv-nTLmSG2pQOO-qSpRaA}{6gGYgT82Sau-N7psk0Wu1w}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-03-06T14:40:21,119][INFO ][o.e.g.GatewayService     ] [5Pv-nTL] recovered [0] indices into cluster_state
+[2018-03-06T14:40:22,154][INFO ][o.e.h.n.Netty4HttpServerTransport] [5Pv-nTL] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2018-03-06T14:40:22,155][INFO ][o.e.n.Node               ] [5Pv-nTL] started
