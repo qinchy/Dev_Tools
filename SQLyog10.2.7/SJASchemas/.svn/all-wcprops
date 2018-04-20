@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/svnfiles/!svn/ver/356999/doc/product/framework/design/mysql/train/%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/SQLyog10.2.7/SJASchemas
+END
+datasync-seltables.xml
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/svnfiles/!svn/ver/356999/doc/product/framework/design/mysql/train/%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/SQLyog10.2.7/SJASchemas/datasync-seltables.xml
+END
+notification.xml
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/svnfiles/!svn/ver/356999/doc/product/framework/design/mysql/train/%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/SQLyog10.2.7/SJASchemas/notification.xml
+END
+odbcimport-withwhere.xml
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/svnfiles/!svn/ver/356999/doc/product/framework/design/mysql/train/%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/SQLyog10.2.7/SJASchemas/odbcimport-withwhere.xml
+END
+datasync-alltables.xml
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/svnfiles/!svn/ver/356999/doc/product/framework/design/mysql/train/%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/SQLyog10.2.7/SJASchemas/datasync-alltables.xml
+END
+exportjob-seltables.xml
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/svnfiles/!svn/ver/356999/doc/product/framework/design/mysql/train/%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/SQLyog10.2.7/SJASchemas/exportjob-seltables.xml
+END
+odbcimport-dsnless.xml
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/svnfiles/!svn/ver/356999/doc/product/framework/design/mysql/train/%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/SQLyog10.2.7/SJASchemas/odbcimport-dsnless.xml
+END
+exportjob-alltables.xml
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/svnfiles/!svn/ver/356999/doc/product/framework/design/mysql/train/%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/SQLyog10.2.7/SJASchemas/exportjob-alltables.xml
+END
+odbcimport-general.xml
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/svnfiles/!svn/ver/356999/doc/product/framework/design/mysql/train/%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/SQLyog10.2.7/SJASchemas/odbcimport-general.xml
+END
+exportjobs-alldbs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/svnfiles/!svn/ver/356999/doc/product/framework/design/mysql/train/%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/SQLyog10.2.7/SJASchemas/exportjobs-alldbs.xml
+END
+odbcimport-withtrigger.xml
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/svnfiles/!svn/ver/356999/doc/product/framework/design/mysql/train/%E5%BC%80%E5%8F%91%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/SQLyog10.2.7/SJASchemas/odbcimport-withtrigger.xml
+END
